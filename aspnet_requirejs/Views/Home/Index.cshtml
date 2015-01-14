@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+@*@section scripts {
+    @Scripts.Render("~/bundles/requirejs", "~/bundles/requirejs_config")
+    @Scripts.Render("~/bundles/app")
+    
+    <script type="text/javascript">
+    var data = @Html.Raw(Json.Encode(Model));
+        console.log(data);
+        //require(function(){
+        //});
+        require([], function(){
+            //var AppView = require('app');
+            //console.log(AppView);
+            console.log('test');
+        });
+    </script>
+    
+}*@
